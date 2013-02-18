@@ -51,8 +51,8 @@ void ___VARIABLE_productName:RFC1034Identifier___ExtInitializer(void** extDataTo
     NSLog(@"Entering ___VARIABLE_productName:RFC1034Identifier___ExtInitializer()");
 
     *extDataToSet = NULL;
-    *ctxInitializerToSet = &ContextInitializer;
-    *ctxFinalizerToSet = &ContextFinalizer;
+    *ctxInitializerToSet = &___VARIABLE_productName:RFC1034Identifier___ContextInitializer;
+    *ctxFinalizerToSet = &___VARIABLE_productName:RFC1034Identifier___ContextFinalizer;
 
     NSLog(@"Exiting ___VARIABLE_productName:RFC1034Identifier___ExtInitializer()");
 }
@@ -71,10 +71,10 @@ void ___VARIABLE_productName:RFC1034Identifier___ExtFinalizer(void* extData)
     return;
 }
 
-/* ContextInitializer()
+/* ___VARIABLE_productName:RFC1034Identifier___ContextInitializer()
  * The context initializer is called when the runtime creates the extension context instance.
  */
-void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToTest, const FRENamedFunction** functionsToSet)
+void ___VARIABLE_productName:RFC1034Identifier___ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToTest, const FRENamedFunction** functionsToSet)
 {
     NSLog(@"Entering ContextInitializer()");
     
@@ -91,12 +91,12 @@ void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, u
     NSLog(@"Exiting ContextInitializer()");
 }
 
-/* ContextFinalizer()
+/* ___VARIABLE_productName:RFC1034Identifier___ContextFinalizer()
  * The context finalizer is called when the extension's ActionScript code
  * calls the ExtensionContext instance's dispose() method.
- * If the AIR runtime garbage collector disposes of the ExtensionContext instance, the runtime also calls ContextFinalizer().
+ * If the AIR runtime garbage collector disposes of the ExtensionContext instance, the runtime also calls ___VARIABLE_productName:RFC1034Identifier___ContextFinalizer().
  */
-void ContextFinalizer(FREContext ctx) 
+void ___VARIABLE_productName:RFC1034Identifier___ContextFinalizer(FREContext ctx) 
 {
     NSLog(@"Entering ContextFinalizer()");
 
